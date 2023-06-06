@@ -1,0 +1,43 @@
+//Declaração de variaveis:
+var tamanhoPizza, saboresPizza, opcao;
+
+
+//Laço de repetição usando Do While:
+do {
+
+  opcao = prompt(`bem vindo a pizzaria, esolha um opção:
+(a)Cardápio de sabores.
+(b)Tamanhos.
+(c)Fazer pedido.
+(d)Finalizar pedido.
+digite a opcao:`)
+
+//Definindo a opção usando switch case:
+  switch (opcao) {
+
+    case "a":
+      alert(`Sabores:
+  Portuguessa.
+  4 Queijos.
+  Marguerita.
+  Calabresa.
+  Frango.`)
+      break
+
+
+    case "b":
+      alert(`Tamanhos:
+Pequena(8 fatias).
+Média(12 fatias).
+Grande(18 fatias).
+gigante(24 fatias).`)
+      break
+
+    case "c":
+      saboresPizza = prompt("Digite os sabores desejados:")
+      tamanhoPizza = prompt("Digite o tamanho da pizza: ")
+
+      console.log(`Sua pizza de ${saboresPizza}, tamanho ${tamanhoPizza} chegara em breve :)`)
+  }
+
+} while (opcao != "d")
