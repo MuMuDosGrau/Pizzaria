@@ -1,0 +1,35 @@
+var opcao, saborPizza, tamanhoPizza;
+
+opcao = prompt(`Bem vindo a pizzaria.
+Digite 1 para ver o cardápio.
+Digite 2 para sair.`)
+
+if (opcao == 1) {
+  saborPizza = prompt(`Os sabores são:
+  Portuguesa.
+  calabreza.
+  queijo.
+  frango.`)
+
+  alert(`Seus sabores são: ${saborPizza} .`)
+
+  tamanhoPizza = prompt(`Informe o tamanho desejado, Digite:
+(1) para Pequena
+(2) para Média
+(3) para Grande`)
+  switch (tamanhoPizza) {
+    case "1":
+      alert(`Sua pizza de ${saborPizza} pequena chegara em breve.`)
+      break
+
+    case "2":
+      alert(`Sua pizza de ${saborPizza} média chegara em breve.`)
+      break
+
+    case "3":
+      alert(`Sua pizza de ${saborPizza} grande chegara em breve.`)
+      break
+  }
+} else {
+  alert("obrigado pela visita.")
+}
