@@ -55,5 +55,5 @@ gigante(24 fatias).`)
 
       console.log(`Sua pizza de ${saboresPizza}, tamanho ${tamanhoPizza} chegara em breve :)`)
   }
-
+//para finalizar o programa:
 } while (opcao != "d")
